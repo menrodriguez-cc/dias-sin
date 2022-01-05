@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>...días sin leer un CUA</title>
+    <link rel="stylesheet" href="./flip/flip.min.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <div class="preset-container-wrapper">
+      <div class="preset-container">
+        <p class="tick-description">Y con esto ya hacen...</p>
+        <div class="tick" data-did-init="handleTickInit" data-credits="false">
+          <div
+            data-repeat="true"
+            data-layout="horizontal fit"
+            data-transform="preset(y, M, d, h, m, s) -> delay"
+          >
+            <div class="tick-group">
+              <div
+                data-key="value"
+                data-repeat="true"
+                data-transform="pad(00) -> split -> delay"
+              >
+                <span data-view="flip"></span>
+              </div>
+
+              <span data-key="label" data-view="text" class="tick-label"></span>
+            </div>
+          </div>
+        </div>
+        <p class="tick-description">...sin leer un CUA</p>
+      </div>
+      <p class="tick-credits">
+        Powered by <a href="https://pqina.nl/" target="_blank">PQINA</a>
+      </p>
+    </div>
+
+    <script src="./flip/flip.min.js"></script>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
